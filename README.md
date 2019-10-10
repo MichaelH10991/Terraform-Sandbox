@@ -3,7 +3,7 @@
 1. install terraform, should be pretty streightforward.
 2. set up awscli by running `brew install awscli`
 3. run `aws configure` and enter your creds found [here](https://console.aws.amazon.com/iam/home?#/security_credentials)
-4. 
+4. There is a deploy script which checks caller identity prior to deploying. run `cd utils/ && bash deploy.sh`
 
 ## Commands
 
