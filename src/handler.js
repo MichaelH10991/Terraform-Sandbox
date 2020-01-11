@@ -1,6 +1,6 @@
 const config = require("./package.json")
 
-exports.handler = (event, context) => {
+const handler = (event, context) => {
     let name = config.name
     let version = config.version
     let description = config.description
@@ -17,3 +17,9 @@ exports.handler = (event, context) => {
         }
     }
 }
+
+handler({}, {})
+
+module.exports = handler
+
+
